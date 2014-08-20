@@ -20,12 +20,12 @@ head
           ul
             li(class="#{page}" === "Tabs" ? "menu-item-divided pure-menu-selected" : "")
               a(href='/tabs') Tabs
-            li
-              a(href='#') Piece of cake
-            li
-              a(href='#') Let's try
-            li
-              a(href='#') Tough
+            li(class="#{category}" === "easy" ? "menu-item-divided pure-menu-selected" : "")
+              a(href='/videos?category=easy') Piece of cake
+            li(class="#{category}" === "medium" ? "menu-item-divided pure-menu-selected" : "")
+              a(href='/videos?category=medium') Let's try
+            li(class="#{category}" === "hard" ? "menu-item-divided pure-menu-selected" : "")
+              a(href='/videos?category=hard') Tough
             li
               a(href='#') Recommended
             li
