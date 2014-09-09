@@ -2,6 +2,10 @@ extends layout
 
 block content
 	.content
+
+		each user, i in userlist
+			p= user.username
+		
 		h2.content-subhead How to use this layout
 		p
 			| To use this layout, you can just copy paste the HTML, along with the CSS in
