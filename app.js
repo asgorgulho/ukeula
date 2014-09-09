@@ -10,6 +10,10 @@ var users = require('./routes/users');
 var tabs = require('./routes/tabs');
 var videos = require('./routes/videos');
 
+var mongo = require('mongodb');
+var monk = require('monk');
+var db = monk('localhost:27017/ukeula')
+
 var app = express();
 
 // view engine setup
